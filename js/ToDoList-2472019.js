@@ -8,6 +8,11 @@ $(document).ready(function () {
     }
 
     $("#add").click(function () {
+        if ($("#taskList li").length >= 10) {
+        alert("Maximum of 10 tasks allowed!");
+        return;
+        }
+
         var task = $("#inputTugas").val();
         if (task) {
             add(task);
@@ -15,8 +20,9 @@ $(document).ready(function () {
         }
     });
 
+    // Jadinya bisa pakai tombol keyboard 'enter' juga buat tambah tugas
     $("#inputTugas").keypress(function (i) {
-        if (i === 13) {
+        if (i.which === 13) {
             $("#add").click();
         }
     });
