@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 400px;
+    height: 475px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+table,
+th,
+td#finish,
+td#start {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#finish:hover {
+    background-color: gold;
+}
+
+#start:hover {
+    background-color: dodgerblue;
+}
+
+#finish,
+#start {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.box {
+    width: 5rem;
+    height: 4rem;
+}
+
+.obstacle {
+    background-color: gray;
+    transition: 0.2s;
+}
+
+.road {
+    background-color: #fff;
+    transition: 0.2s;
+}
+
+.obstacle:hover {
+    background-color: red;
+}
+
+.road:hover {
+    background-color: greenyellow;
+}
